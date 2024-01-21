@@ -1,0 +1,100 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2024-01-20T09:07:28.276Z",
+    "end": "2024-01-20T09:07:34.002Z",
+    "duration": 5726,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "14acf069-0e58-42f2-a973-a9ab88e30d9f",
+      "title": "",
+      "fullFile": "cypress\\e2e\\SearchResults.cy.js",
+      "file": "cypress\\e2e\\SearchResults.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6cb5f018-3c76-42cb-9e23-b3909008d8cf",
+          "title": "Searching",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Search product white color type and 6X8 size",
+              "fullTitle": "Searching Search product white color type and 6X8 size",
+              "timedOut": null,
+              "duration": 5652,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "_Methods.default.visit('https://demo.vercel.store/');\n_Methods.default.fillInput(_dashboardLocators.default.searchProductInputText, 'Acme Drawstring Bag{enter}');\n_Methods.default.clickButton(_searchResultLocator.default.searchResultProduct);\n_Methods.default.wait(1000);\n_Methods.default.clickButton(_productDetailsLocator.default.colorWhiteType, 1000);\n_Methods.default.clickButton(_productDetailsLocator.default.productSizeType, 1000);\n_Methods.default.clickButton(_productDetailsLocator.default.addToCart);\n_Methods.default.shouldHaveText(_productDetailsLocator.default.addedProductText, 'Acme Drawstring Bag');\n_Methods.default.shouldHaveText(_productDetailsLocator.default.addedProductType, 'White / 6 x 8 inch');",
+              "err": {},
+              "uuid": "b108b68c-3ea6-4094-a978-cba1327c3eb9",
+              "parentUUID": "6cb5f018-3c76-42cb-9e23-b3909008d8cf",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "b108b68c-3ea6-4094-a978-cba1327c3eb9"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 5652,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": true,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": null,
+      "version": "6.2.0"
+    }
+  }
+}
