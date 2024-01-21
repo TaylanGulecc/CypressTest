@@ -52,9 +52,9 @@ describe('template spec', () => {
 
         it('Verifying terms and conditions', () => {
           methods.visit('https://demo.vercel.store/')
-          Methods.clickButton(dashboardLocators.termsAndConditionButton)
-          Methods.wait(5000)
-          Methods.urlPath("/terms-conditions")
+          methods.clickButton(dashboardLocators.termsAndConditionButton)
+          methods.wait(5000)
+          methods.urlPath("/terms-conditions")
           
         })
 
